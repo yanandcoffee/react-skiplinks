@@ -4,6 +4,7 @@ import { SkipLinks } from 'react-skiplinks'
 import 'react-skiplinks/dist/index.css'
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { okaidia } from "react-syntax-highlighter/dist/esm/styles/prism";
+import GitHubButton from 'react-github-btn'
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
               Easily and consistently add skip navigation links to your React app
             </em>
           </h2>
+          <GitHubButton href="https://github.com/yanandcoffee/react-skiplinks" data-icon="octicon-star" data-size="large" aria-label="Star yanandcoffee/react-skiplinks on GitHub">Star</GitHubButton>{" "}
+          <GitHubButton href="https://github.com/yanandcoffee" data-size="large" aria-label="Follow @yanandcoffee on GitHub">Follow @yanandcoffee</GitHubButton>
         </header>
         <SkipLinks />
         <section data-skip-link="Go to Usage" id="usage">
@@ -122,7 +125,7 @@ export default function SkipLinks({ className }) {
         </section>
         <footer data-skip-link="Go to Footer" id="footer">
           Created by{" "}
-          <a href="https://www.linkedin.com/in/yanandcoffee">Yan Li</a>
+          <a href="https://www.linkedin.com/in/yanandcoffee">Yan Li. <a href="https://icons8.com/icon/118557/github">GitHub icon by Icons8</a></a>
         </footer>
       </div>
     </>

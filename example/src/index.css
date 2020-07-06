@@ -41,7 +41,8 @@ header h2 {
 }
 
 header {
-  background: #5ddcc4;
+  background: #20252D;
+  color: white;
 }
 
 p > code {

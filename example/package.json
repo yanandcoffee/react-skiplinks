@@ -20,6 +20,7 @@
     "@types/react-syntax-highlighter": "link:../node_modules/@types/react-syntax-highlighter",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
+    "react-github-btn": "link:../node_modules/react-github-btn",
     "react-scripts": "link:../node_modules/react-scripts",
     "react-skiplinks": "link:..",
     "react-syntax-highlighter": "link:../node_modules/react-syntax-highlighter",
