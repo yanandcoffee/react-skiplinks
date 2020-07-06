@@ -2,7 +2,7 @@
   "name": "react-skiplinks",
   "version": "1.0.0",
   "description": "Easily and consistently add skip navigation links to your React app",
-  "author": "yanandcoffee",
+  "author": "Yan Li <yanandcoffee@gmail.com>",
   "license": "MIT",
   "repository": "yanandcoffee/react-skiplinks",
   "main": "dist/index.js",

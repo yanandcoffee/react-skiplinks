@@ -51,7 +51,7 @@ And it will generate these skip links:
 </nav>
 ```
 
-See it in action here.
+See it in action [here](http://www.yanandcoffee.com/react-skiplinks/).
 
 ## License
 
