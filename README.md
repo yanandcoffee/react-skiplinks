@@ -1,4 +1,4 @@
-# react-skiplinks
+# React Skiplinks
 
 > Easily and consistently add skip navigation links to your React app
 
@@ -15,12 +15,12 @@ npm install --save react-skiplinks
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-skiplinks'
+import SkipLinks from 'react-skiplinks'
 import 'react-skiplinks/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <SkipLinks />
   }
 }
 ```

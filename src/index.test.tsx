@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { SkipLinks } from '.'
 
-describe('ExampleComponent', () => {
+describe('SkipLinks', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(SkipLinks).toBeTruthy()
   })
 })
