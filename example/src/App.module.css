@@ -1,0 +1,17 @@
+
+:global(.parent) .standout {
+    background: #eee;
+    padding: 2rem 4rem;
+    font-size: 1.2em;
+}
+
+.skipLinks a {
+    padding: 10px 12px;
+    color: #EEE;
+}
+
+.skipLinks a:focus,
+.skipLinks a:active {
+    left: 3px;
+    top: 3px;
+}

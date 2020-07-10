@@ -5,12 +5,14 @@ import 'react-skiplinks/dist/index.css'
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { okaidia } from "react-syntax-highlighter/dist/esm/styles/prism";
 import GitHubButton from 'react-github-btn'
+import styles from './App.module.css'
 
 const App = () => {
   return (
     <>
       <div className="parent">
-        <header data-skip-link="Go to Introduction" id="introduction">
+        <SkipLinks className={styles.skipLinks} />
+        <header>
           <h1>React {`<SkipLinks />`}</h1>
           <h2>
             <em>
@@ -20,7 +22,9 @@ const App = () => {
           <GitHubButton href="https://github.com/yanandcoffee/react-skiplinks" data-icon="octicon-star" data-size="large" aria-label="Star yanandcoffee/react-skiplinks on GitHub">Star</GitHubButton>{" "}
           <GitHubButton href="https://github.com/yanandcoffee" data-size="large" aria-label="Follow @yanandcoffee on GitHub">Follow @yanandcoffee</GitHubButton>
         </header>
-        <SkipLinks />
+        <section className={styles.standout}>
+          Start at your browser search bar and hit Tab key to try them on this page!
+        </section>
         <section data-skip-link="Go to Usage" id="usage">
           <h2>Usage</h2>
           <p>
@@ -29,8 +33,7 @@ const App = () => {
           </p>
           <p>For example:</p>
           <SyntaxHighlighter language="html" style={okaidia}>
-            {`<section data-skip-link="Go to Introduction" id="introduction"></section>
-<section data-skip-link="Go to Usage" id="usage"></section>
+            {`<section data-skip-link="Go to Usage" id="usage"></section>
 <section data-skip-link="Go to How Does It Work?" id="how-does-it-work"></section>
 <section data-skip-link="Go to More Details" id="more-details"></section>
 <section data-skip-link="Go to Footer" id="footer"></section>`}
@@ -39,7 +42,6 @@ const App = () => {
           <SyntaxHighlighter language="html" style={okaidia}>
             {`<nav class="skipLinks">
   <ul>
-    <li><a href="#introduction">Go to Introduction</a></li>
     <li><a href="#usage">Go to Usage</a></li>
     <li><a href="#how-does-it-work">Go to How Does It Work?</a></li>
     <li><a href="#more-details">Go to More Details</a></li>
@@ -119,13 +121,13 @@ export default function SkipLinks({ className }) {
         <section data-skip-link="Go to More Details" id="more-details">
           <h2>More Details</h2>
           <p>
-            This was originally written in plain vanilla React, then converted to Typescript. The reason `data-skip-link` allows freeform text is to support localization. You can read more about my thought process of this implementation in my blog post,{" "}
+            This was originally written in plain vanilla React, then converted to Typescript. The reason <code>data-skip-link</code> allows freeform text is to support localization. You can read more about my thought process of this implementation in my blog post,{" "}
             <a href="https://www.yanandcoffee.com/2020/07/05/skip-links/">{`Creating a <SkipLinks/> Component`}</a>.
           </p>
         </section>
         <footer data-skip-link="Go to Footer" id="footer">
           Created by{" "}
-          <a href="https://www.linkedin.com/in/yanandcoffee">Yan Li. <a href="https://icons8.com/icon/118557/github">GitHub icon by Icons8</a></a>
+          <a href="https://www.linkedin.com/in/yanandcoffee">Yan Li.</a>
         </footer>
       </div>
     </>
